@@ -1,0 +1,92 @@
+//  上記ファイルを変更しない場合は、Bootstrapベース
+// ```
+// // xs（スマフォ最小幅）のmax以下
+// @include layout-max('xs'){
+//    // style
+// };
+
+// // lg（pc最大幅）のmin以上
+// @include layout-min('lg'){
+//    // style
+// };
+
+// // sm（タブレット）サイズ（max/minを設定）
+// @include layout-maxmin('sm') {
+//    // style
+// }
+// ```
+
+// pxを設定
+// ```
+// // 400px以下
+// @include layout-max-px('400px'){
+//    // style
+// };
+
+// //　800px以下
+// @include layout-min-px('800px'){
+//    // style
+// };
+
+// // 600px以上、800px以下
+// @include layout-maxmin-px('600px','800px') {
+//    // style
+// }
+// ```
+
+
+@mixin layout-max($break-point) {
+  @media screen and (max-width: map-get($_breakpoint-max, $break-point)) {
+    @content;
+  }
+}
+
+@mixin layout-min($break-point) {
+  @media screen and (min-width: map-get($_breakpoint-min, $break-point)) {
+    @content;
+  }
+}
+
+@mixin layout-minmax($break-point) {
+  @media screen and (min-width: map-get($_breakpoint-min, $break-point)) and (max-width: map-get($_breakpoint-max, $break-point)) {
+    @content;
+  }
+}
+
+@mixin layout-max-px($break-point-px) {
+  @media screen and (max-width: $break-point-px) {
+    @content;
+  }
+}
+
+@mixin layout-min-px($break-point-px) {
+  @media screen and (min-width: $break-point-px) {
+    @content;
+  }
+}
+
+@mixin layout-minmax-px($break-point-min-px,$break-point-max-px) {
+  @media screen and (min-width: $break-point-min-px) and (max-width: $break-point-max-px) {
+    @content;
+  }
+}
+
+@mixin layout-block-center(){
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin layout-col($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage(( 1 / $columns));
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+}
+
+@mixin layout-col-padding($gutter: $grid-gutter-width) {
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+}
+

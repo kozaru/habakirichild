@@ -1,0 +1,20 @@
+$_font-family-maru:  'ヒラギノ丸ゴ ProN W4', 'Hiragino Maru Gothic ProN', Meiryo,'メイリオ', 'ＭＳ Ｐゴシック', Arial, sans-serif;
+$_font-family-kaku:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+$_font-family-min: 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN W3','ＭＳ Ｐ明朝','MS PMincho','MS 明朝',Georgia, 'Times New Roman', Times, serif;
+
+// Bootstrap：variableを上書き用
+$_font-family-base: $font-family-base;
+
+/* Yu Gothic for Windows */
+@font-face {
+  font-family: MyYuGothic;
+  font-weight: normal;
+  src: local(YuGothic-Medium),
+       local("Yu Gothic Medium"); /* for Chrome */
+}
+@font-face {
+  font-family: MyYuGothic;
+  font-weight: bold;
+  src: local(YuGothic-Bold),
+       local("Yu Gothic"); /* for Chrome */
+}

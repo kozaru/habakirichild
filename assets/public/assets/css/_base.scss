@@ -1,0 +1,133 @@
+// *
+//  * Baseレイヤーにはプロジェクトにおける、基本的なベーススタイルを定義します。
+//  * 要素セレクタや属性セレクタなど、詳細度はできるかぎり低く保っておきます。
+//  * 基本的にclass属性は使用しません。
+
+
+body {
+  color: $_color-text;
+  font-family: sans-serif;
+}
+body[data-os^="Windows"] {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+}
+body[data-os="Windows 10"] {
+  font-family:  MyYuGothic,"Noto Sans CJK JP", Meiryo, sans-serif;
+}
+body[data-os^="Mac OS"] {
+  font-family:  YuGothic,"Noto Sans Japanese", sans-serif;
+}
+body[data-os^="iOS"] {
+  font-family: sans-serif;
+}
+body[data-os^="Android"] {
+  font-family: Roboto, sans-serif;
+}
+body[data-os^="Android 4"],
+body[data-os^="Android 5"] {
+  font-family: Roboto, MotoyaLCedar, sans-serif;
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+
+a{
+  img,svg{
+    //chrome対策
+    backface-visibility: hidden;
+    @include transition-property(opacity);
+    @include transition-duration($_global-duration);
+  }
+  &:hover{
+    cursor: pointer;
+    img,svg{
+      @include opacity($_global-opacity);
+    }
+  }
+}
+
+.sub-page-contents{
+  img{
+    @include img-responsive(inline-block);
+  }
+}
+.breadcrumbs{
+  @include layout-min( 'lg' ) {
+    a,
+    strong{
+      &:first-child{
+
+      }
+    }
+  }
+}
+
+
+// .pagination-wrapper{
+//   text-align: center;
+//   @include layout-min( 'lg' ) {
+//     text-align: left;
+//   }
+//   ul.pagination{
+//     padding-left: 0;
+//   }
+//   li{
+//     text-align: center;
+//     >a,
+//     >span {
+//       display: inline-block;
+//       padding: 6px 0;
+//       width: 28px;
+//       height: 28px;
+//       background-color: #fff;
+//       border-top: 1px solid $_color-jungle-green;
+//       border-bottom: 1px solid $_color-jungle-green;
+//       border-left: 1px solid $_color-jungle-green;
+//       border-right: none;
+//       border-radius: 0;
+//       font-size: 14px;
+//       line-height: 1;
+//     }
+//     >a{
+//       &:hover{
+//         background-color: rgba($_color-jungle-green,.1);
+//         border-color: $_color-jungle-green;
+//       }
+//     }
+//     >a.current,
+//     >span.current {
+//       background-color: $_color-jungle-green;
+//       color: #fff;
+//       &:hover{
+//         border-color: $_color-jungle-green;
+//         color: #fff;
+//       }
+//     }
+//     >a.next{
+//       background-image: url(bgimages/right-double-arrow.svg);
+//       background-repeat: no-repeat;
+//       background-position: center center;
+//     }
+//     &:first-child{
+//       >a,
+//       >span {
+//         border-top-left-radius: $_global-radius-base;
+//         border-bottom-left-radius: $_global-radius-base;
+//       }
+//     }
+//     &:last-child{
+//       >a,
+//       >span {
+//         border-right: 1px solid $_color-jungle-green;
+//         border-top-right-radius: $_global-radius-base;
+//         border-bottom-right-radius: $_global-radius-base;
+//       }
+//     }
+//   }
+// }
+

@@ -1,0 +1,13 @@
+#contents
+  .sub-page-contents
+    .container
+      main#main(role='main')
+        .breadcrumbs
+          a(href='index.html') ホーム
+          |  >
+          strong= pagename
+        != partial("_single/html")
+        // end #main
+      // end .container
+    // end .sub-page-contents
+  // end #contents

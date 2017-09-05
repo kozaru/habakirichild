@@ -1,0 +1,62 @@
+// base color
+$_color-text: #4a4a4a;
+$_color-text-h: #787878;
+$_color-bg: $body-bg;
+
+// link color
+$_color-link: #007434;
+$_color-link-hover: lighten($_color-link, 15%);
+
+
+$_color-brownish-gray: #606060;
+$_color-warm-gray: #9b9b9b;
+$_color-light-gray: #d8d8d8;
+$_color-pale-gray: #edeff4;
+$_color-light-greengray: #f5f4eb;
+$_color-light-bordergray: #d9d7c7;
+$_color-hr-light-gray: #e7e7e7;
+$_color-light-gray-two: #c8dfce;
+$_color-light-faqhrgray: #d2d2d2;
+$_color-greengray: #7eb2ba;
+$_color-light-blue: #8ecfed;
+$_color-light-blue2: #8dceed;
+
+$_color-jungle-green: #007434;
+$_color-jungle-green-hover: #5ca37b;
+$_color-breadcrumbs-green: #59a47a;
+
+$_color-table-th-bg: rgba(89, 180, 193, 0.15);
+$_color-table-th-border: #59b4c1;
+$_color-table-th-text: #018ca0;
+
+$_color-tag-purple: #cf99c4;
+$_color-tag-blue: $_color-light-blue2;
+
+$_color-facility-table-thbg: #e6f4f6;
+$_color-search-link-h3: #112f55;
+
+$_color-search-result-h2: #787878;
+$_color-search-result-list-bg: #f4f4f4;
+$_color-bg-sakai: #ffc085;
+$_color-bg-kita: #8db1e4;
+$_color-bg-mihara: #7dc6b9;
+$_color-bg-higashi: #f298b7;
+$_color-bg-naka: #c4c4c4;
+$_color-bg-nishi: #a2d686;
+$_color-bg-minami: #fbda79;
+
+// component color
+// $color-ui-border: #ddd;
+// $color-ui-bg: #fff;
+
+// .head-bk {
+  // background-color: #007434;
+  // background-color: var(--jungle-green);
+
+//   .rectangle-111-copy-3 {
+//   width: 250px;
+//   height: 36px;
+//   border-radius: 4px;
+//   background-color: #606060;
+//   background-color: var(--brownish-grey);
+// }

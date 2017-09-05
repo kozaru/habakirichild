@@ -1,0 +1,35 @@
+// ```
+// //mapの読み込み
+// $font-size-base: map-get($_font-size, 'base');
+// ```
+
+$_global-fixednav-height: 70px;
+
+
+// default grid columns
+// default: 12
+// Bootstrap：variableを上書き用
+$_global-column: $grid-columns;
+
+// base Rounded corners
+// default: 4px 6px 3px
+// Bootstrap：variableを上書き用
+$_global-radius-base: $border-radius-base;
+$_global-radius-large: 8px;
+$_global-radius-small: $border-radius-small;
+
+// line-height-base
+// 1.428571429 !default; // 20/14
+// Bootstrap：variableを上書き用
+$_global-line-height-base: 1.5;
+
+// base animation speed
+$_global-duration: 0.1s;
+
+// line-height-computed
+// default://~20px
+// Bootstrap：variableを上書き用
+$_global-line-height-computed: 16px;//~20px
+
+// base animation speed
+$_global-opacity: 0.7;

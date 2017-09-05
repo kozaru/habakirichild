@@ -1,0 +1,61 @@
+doctype
+html(lang='ja')
+  head(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#')
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+    //if lt IE 9
+      script(src='#{uri}/wp-content/themes/habakiri/js/html5shiv.min.js')
+    title= sitetitle
+    meta(name='robots', content='noindex,follow')
+    // テーマから貼り付ける
+    script(type='text/javascript').
+      window._wpemojiSettings = {"baseUrl":"https:\\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/search-soudannet.local\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"}};
+      !function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    script(src='#{uri}/wp-includes/js/wp-emoji-release.min.js?ver=4.8', type='text/javascript', defer='')
+    style(type='text/css').
+      img.wp-smiley,
+      img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+      }
+    link#parent-style-css(rel='stylesheet', href='#{uri}/wp-content/themes/habakiri/style.css?ver=4.8', type='text/css', media='all')
+    link#habakiri-assets-css(rel='stylesheet', href='#{uri}/wp-content/themes/habakiri/css/assets.min.css?ver=1.0.0', type='text/css', media='all')
+    link#habakiri-css(rel='stylesheet', href='#{uri}/wp-content/themes/habakiri/style.min.css?ver=20170713082503', type='text/css', media='all')
+    link#soudan-net-css(rel='stylesheet', href='/assets/css/style.css', type='text/css', media='all')
+    script(type='text/javascript', src='#{uri}/wp-includes/js/jquery/jquery.js?ver=1.12.4')
+    script(type='text/javascript', src='#{uri}/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1')
+    style.
+      /* Safari 6.1+ (10.0 is the latest version of Safari at this time) */
+      @media (max-width: 991px) and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) { @media () {
+      display: block !important;
+      .header__col {
+      width: 100%;
+      }
+      }}
+    style(type='text/css').
+      .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+  // テーマから貼り付ける
+  style.
+    a{color:#007434}a:focus,a:active,a:hover{color:#007434}.site-branding a{color:#000}.responsive-nav a{color:#ffffff;font-size:16px}.responsive-nav a small{color:#777;font-size:10px}.responsive-nav a:hover small,.responsive-nav a:active small,.responsive-nav .current-menu-item small,.responsive-nav .current-menu-ancestor small,.responsive-nav .current-menu-parent small,.responsive-nav .current_page_item small,.responsive-nav .current_page_parent small{color:#777}.responsive-nav .menu>.menu-item>a,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.menu-item>a{background-color:#007434;padding:11px 20px}.responsive-nav .menu>.menu-item>a:hover,.responsive-nav .menu>.menu-item>a:active,.responsive-nav .menu>.current-menu-item>a,.responsive-nav .menu>.current-menu-ancestor>a,.responsive-nav .menu>.current-menu-parent>a,.responsive-nav .menu>.current_page_item>a,.responsive-nav .menu>.current_page_parent>a,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.menu-item>a:hover,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.menu-item>a:active,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.current-menu-item>a,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.current-menu-ancestor>a,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.current-menu-parent>a,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.current_page_item>a,.header--transparency.header--fixed--is_scrolled .responsive-nav .menu>.current_page_parent>a{background-color:#5ca37b;color:#ffffff}.responsive-nav .sub-menu a{background-color:#000;color:#777}.responsive-nav .sub-menu a:hover,.responsive-nav .sub-menu a:active,.responsive-nav .sub-menu .current-menu-item a,.responsive-nav .sub-menu .current-menu-ancestor a,.responsive-nav .sub-menu .current-menu-parent a,.responsive-nav .sub-menu .current_page_item a,.responsive-nav .sub-menu .current_page_parent a{background-color:#191919;color:#337ab7}.off-canvas-nav{font-size:18px}.responsive-nav,.header--transparency.header--fixed--is_scrolled .responsive-nav{background-color:transparent}#responsive-btn{background-color:transparent;border-color:transparent;color:#000}#responsive-btn:hover{background-color:transparent;border-color:transparent;color:#000}.habakiri-slider__transparent-layer{background-color:rgba( 0,0,0, 0.1 )}.page-header{background-color:#222;color:#fff}.pagination>li>a{color:#007434}.pagination>li>span{background-color:#007434;border-color:#007434}.pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover{color:#007434}.header{background-color:#fff}.header--transparency.header--fixed--is_scrolled{background-color:#fff !important}.footer{background-color:#edeff4}.footer-widget-area a{color:#777}.footer-widget-area,.footer-widget-area .widget_calendar #wp-calendar caption{color:#555}.footer-widget-area .widget_calendar #wp-calendar,.footer-widget-area .widget_calendar #wp-calendar *{border-color:#555}@media(min-width:1200px){.responsive-nav{display:block}.off-canvas-nav,#responsive-btn{display:none !important}.header--2row{padding-bottom:0}.header--2row .header__col,.header--center .header__col{display:block}.header--2row .responsive-nav,.header--center .responsive-nav{margin-right:-1000px;margin-left:-1000px;padding-right:1000px;padding-left:1000px}.header--center .site-branding{text-align:center}}
+  body(class="#{ bodyclass }")
+    #container.responsive-nav-contents
+      != partial("_header/html")
+      #contents
+        != yield
+      != partial("_footer/html")
+    script.
+      jQuery( function( $ ) {
+      $( '.js-responsive-nav' ).responsive_nav( {
+      direction: 'right'
+      } );
+      } );
+    script(type='text/javascript', src='#{uri}/wp-content/themes/habakiri/js/app.min.js?ver=1.0.0')
+    script(type='text/javascript', src='#{uri}/wp-includes/js/wp-embed.min.js?ver=4.8')
+    script(type='text/javascript', src='/assets/js/custom.js')

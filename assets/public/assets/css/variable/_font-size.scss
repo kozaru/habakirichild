@@ -1,0 +1,15 @@
+// base font-size
+// default base: 14px 18px 12px
+// default h: 36px 30px 24px 18px 14px 12px
+// Bootstrap：variableを上書き用
+$_font-size: (
+  'base': $font-size-base,
+  'large': $font-size-large,
+  'small': $font-size-small,
+  'h1': 36px,
+  'h2': 24px,
+  'h3': 21px,
+  'h4': $font-size-h4,//18px
+  'h5': $font-size-h5,
+  'h6': $font-size-h6
+);

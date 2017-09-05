@@ -1,0 +1,21 @@
+header#header.header.header--2row
+  .container
+    .row.header__content
+      .col-xs-12.col-sm-8.header__col
+        .site-branding
+          h1.site-branding__heading
+            a(href='#{uri}', rel='home')= sitetitle
+        // end .site-branding
+      // end .header__col
+      .header__search.js-header-search
+        // end .header__search
+      .col-xs-4.col-md-12.header__col.global-nav-wrapper.clearfix
+        nav.global-nav.js-responsive-nav(role='navigation')
+          .menu-global_menu-container
+          // end .global-nav
+        #search-btn
+        #responsive-btn
+        // end .header__col
+      // end .row
+    // end .container
+  // end #header

@@ -1,0 +1,10 @@
+{
+  "index": {
+    "pagename": "Home",
+    "bodyclass":"home page-template-default page responsive-nav-wrapper"
+  },
+  "single": {
+    "pagename": "",
+    "bodyclass":"page-template page-template-templates page-template-no-sidebar page-template-templatesno-sidebar-php page responsive-nav-wrapper"
+  }
+}

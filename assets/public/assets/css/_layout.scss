@@ -1,0 +1,47 @@
+.sub-page-contents{
+  >.container{
+    @include layout-minmax( 'sm' ) {
+    }
+    @include layout-minmax( 'md' ) {
+
+    }
+  }
+}
+
+.home{
+  .sub-page-contents{
+    main{
+      >.container{
+        @include layout-minmax( 'sm' ) {
+        }
+        @include layout-minmax( 'md' ) {
+
+        }
+      }
+    }
+  }
+}
+.header{
+
+  @include layout-max( 'xs' ) {
+
+  }
+  @include layout-min( 'lg' ) {
+  }
+  &__content{
+
+  }
+}
+.sub-page-contents{
+
+}
+
+.container{
+  @include layout-minmax( 'sm' ) {
+
+  }
+  @include layout-minmax( 'md' ) {
+
+  }
+}
+

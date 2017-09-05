@@ -1,0 +1,13 @@
+// Bootstrap variables
+@import "../vendor/bootstrap/bootstrap/variables";
+
+// Foundation variables
+@import "global";
+@import "margin";
+@import "breakpoint";
+@import "font-size";
+@import "font-family";
+@import "color";
+
+// Bootstrap variables + override (Foundation variables)
+@import "bootstrap_override";

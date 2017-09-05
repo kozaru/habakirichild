@@ -1,0 +1,50 @@
+// ```
+// //mapの読み込み
+// map-get($_breakpoint-min, 'xs')
+// ```
+
+
+// Bootstrap：variableを上書き用
+// min-width
+// default:480px/768px/992px/1200px
+$_breakpoint-min: (
+  'xs': 480px,
+  'sm': 768px,
+  'md': 992px,
+  'lg': 1200px
+);
+
+// max-width
+// default:767px/991px/1199px
+$_breakpoint-max: (
+  'xs': 767px,
+  'sm': 991px,
+  'md': 1199px
+);
+
+// gutter-width
+// default:30px
+$_breakpoint-gutter-width: 30px;
+
+// container-base (containerwidth = container-base + $grid-gutter-width)
+// default: 100%, 720px 940px 1140px
+$_breakpoint-container-base: (
+  'sm': 720px,
+  'md': 940px,
+  'lg': 1140px
+);
+
+// Bootstrap：variableを上書き用ここまで
+
+$_breakpoint-min-xs: map-get($_breakpoint-min, 'xs');
+$_breakpoint-min-sm: map-get($_breakpoint-min, 'sm');
+$_breakpoint-min-md: map-get($_breakpoint-min, 'md');
+$_breakpoint-min-lg: map-get($_breakpoint-min, 'lg');
+
+$_breakpoint-max-xs: map-get($_breakpoint-max, 'xs');
+$_breakpoint-max-sm: map-get($_breakpoint-max, 'sm');
+$_breakpoint-max-md: map-get($_breakpoint-max, 'md');
+
+$_breakpoint-container-base-sm: map-get($_breakpoint-container-base, 'sm');
+$_breakpoint-container-base-md: map-get($_breakpoint-container-base, 'md');
+$_breakpoint-container-base-lg: map-get($_breakpoint-container-base, 'lg');
