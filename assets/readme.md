@@ -18,7 +18,12 @@ $ sudo npm install -g harp
 
 ### 3. Install some node-module（node-moduleをインストール）
 
-wp-content/themes/内にインストール後、assetsディレクトリにて
+1. wp-content/themes/内にclone
+2. フォルダ名を変更
+3. 必要な場合は .git を削除
+4. style.css と　assets/scss/style.scss を変更（タイトルなど）
+5. assets/harp.json の sitetitle / uri を変更
+6. assetsディレクトリにて
 
 ```
 $ cd assets
